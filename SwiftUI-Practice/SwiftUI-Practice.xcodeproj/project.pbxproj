@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54707AF52750C77B00AF5331 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54707AF42750C77B00AF5331 /* TabView.swift */; };
+		54707AF62750C77B00AF5331 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54707AF42750C77B00AF5331 /* TabView.swift */; };
+		54707AF82750C98200AF5331 /* TabViewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54707AF72750C98200AF5331 /* TabViewAssets.xcassets */; };
+		54707AF92750C98200AF5331 /* TabViewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54707AF72750C98200AF5331 /* TabViewAssets.xcassets */; };
 		54DFF818274E279200988C9B /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFF817274E279200988C9B /* Tests_iOS.swift */; };
 		54DFF81A274E279200988C9B /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFF819274E279200988C9B /* Tests_iOSLaunchTests.swift */; };
 		54DFF824274E279200988C9B /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFF823274E279200988C9B /* Tests_macOS.swift */; };
 		54DFF826274E279200988C9B /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFF825274E279200988C9B /* Tests_macOSLaunchTests.swift */; };
 		54DFF827274E279200988C9B /* SwiftUI_PracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFF7FF274E279200988C9B /* SwiftUI_PracticeApp.swift */; };
 		54DFF828274E279200988C9B /* SwiftUI_PracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFF7FF274E279200988C9B /* SwiftUI_PracticeApp.swift */; };
-		54DFF829274E279200988C9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFF800274E279200988C9B /* ContentView.swift */; };
-		54DFF82A274E279200988C9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFF800274E279200988C9B /* ContentView.swift */; };
 		54DFF82B274E279200988C9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54DFF801274E279200988C9B /* Assets.xcassets */; };
 		54DFF82C274E279200988C9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54DFF801274E279200988C9B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -37,8 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54707AF42750C77B00AF5331 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		54707AF72750C98200AF5331 /* TabViewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabViewAssets.xcassets; sourceTree = "<group>"; };
 		54DFF7FF274E279200988C9B /* SwiftUI_PracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_PracticeApp.swift; sourceTree = "<group>"; };
-		54DFF800274E279200988C9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		54DFF801274E279200988C9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54DFF806274E279200988C9B /* SwiftUI-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54DFF80C274E279200988C9B /* SwiftUI-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,9 +86,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54707AF12750C6D800AF5331 /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				54707AF22750C71400AF5331 /* View Layout and Presentation */,
+			);
+			path = Basics;
+			sourceTree = "<group>";
+		};
+		54707AF22750C71400AF5331 /* View Layout and Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				54707AF32750C76000AF5331 /* Hierarchical Views */,
+			);
+			path = "View Layout and Presentation";
+			sourceTree = "<group>";
+		};
+		54707AF32750C76000AF5331 /* Hierarchical Views */ = {
+			isa = PBXGroup;
+			children = (
+				54707AF42750C77B00AF5331 /* TabView.swift */,
+				54707AF72750C98200AF5331 /* TabViewAssets.xcassets */,
+			);
+			path = "Hierarchical Views";
+			sourceTree = "<group>";
+		};
 		54DFF7F9274E279200988C9B = {
 			isa = PBXGroup;
 			children = (
+				54DFF7FF274E279200988C9B /* SwiftUI_PracticeApp.swift */,
+				54707AF12750C6D800AF5331 /* Basics */,
 				54DFF7FE274E279200988C9B /* Shared */,
 				54DFF80D274E279200988C9B /* macOS */,
 				54DFF816274E279200988C9B /* Tests iOS */,
@@ -97,8 +127,6 @@
 		54DFF7FE274E279200988C9B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				54DFF7FF274E279200988C9B /* SwiftUI_PracticeApp.swift */,
-				54DFF800274E279200988C9B /* ContentView.swift */,
 				54DFF801274E279200988C9B /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -267,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54DFF82B274E279200988C9B /* Assets.xcassets in Resources */,
+				54707AF82750C98200AF5331 /* TabViewAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54DFF82C274E279200988C9B /* Assets.xcassets in Resources */,
+				54707AF92750C98200AF5331 /* TabViewAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54DFF829274E279200988C9B /* ContentView.swift in Sources */,
+				54707AF52750C77B00AF5331 /* TabView.swift in Sources */,
 				54DFF827274E279200988C9B /* SwiftUI_PracticeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54DFF82A274E279200988C9B /* ContentView.swift in Sources */,
+				54707AF62750C77B00AF5331 /* TabView.swift in Sources */,
 				54DFF828274E279200988C9B /* SwiftUI_PracticeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
